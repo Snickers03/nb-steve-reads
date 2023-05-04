@@ -6,7 +6,8 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "clean": "rimraf yarn.lock & rimraf -rf node_modules"
   },
   "dependencies": {
     "@types/node": "18.16.3",
