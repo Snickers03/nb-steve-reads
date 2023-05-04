@@ -1,6 +1,6 @@
-# Elon Reads
+# Steve Jobs
 
-Elon Reads is a showcase of books that inspire Elon Musk, built using modern web technologies.
+Steve Reads is a showcase of books that inspire Elon Musk, built using modern web technologies.
 
 ## Tech Stack
 
