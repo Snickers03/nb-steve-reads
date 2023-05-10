@@ -18,7 +18,7 @@ export default function RootLayout({ children }: RootLayoutProps) {
     <html lang='en'>
       <ThemeProvider attribute='class' defaultTheme='system' enableSystem>
         <body
-          className={`${opensans.className} bg-slate-300  dark:bg-slate-600 lg:bg-[#EDF2F6] dark:lg:bg-slate-800`}
+          className={`${opensans.className} bg-slate-300  dark:bg-slate-600 lg:bg-slate-400 dark:lg:bg-slate-800`}
         >
           {children}
         </body>
