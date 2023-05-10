@@ -1,5 +1,6 @@
 import "./globals.css";
 import { Open_Sans } from "next/font/google";
+import { ThemeProvider } from "./../components/theme-provider";
 
 const opensans = Open_Sans({ subsets: ["latin"] });
 
@@ -14,8 +15,14 @@ interface RootLayoutProps {
 
 export default function RootLayout({ children }: RootLayoutProps) {
   return (
-    <html lang="en">
-      <body className={opensans.className}>{children}</body>
+    <html lang='en'>
+      <ThemeProvider attribute='class' defaultTheme='system' enableSystem>
+        <body
+          className={`${opensans.className} bg-slate-300  dark:bg-slate-600 lg:bg-[#EDF2F6] dark:lg:bg-slate-800`}
+        >
+          {children}
+        </body>
+      </ThemeProvider>
     </html>
   );
 }
