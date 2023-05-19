@@ -16,13 +16,13 @@ interface RootLayoutProps {
 export default function RootLayout({ children }: RootLayoutProps) {
   return (
     <html lang='en'>
-      <ThemeProvider attribute='class' defaultTheme='system' enableSystem>
-        <body
-          className={`${opensans.className} bg-slate-300  dark:bg-slate-600 lg:bg-slate-400 dark:lg:bg-slate-800`}
-        >
+      <body
+        className={`${opensans.className} bg-slate-300  dark:bg-slate-600 lg:bg-slate-400 dark:lg:bg-slate-800`}
+      >
+        <ThemeProvider attribute='class' defaultTheme='system' enableSystem>
           {children}
-        </body>
-      </ThemeProvider>
+        </ThemeProvider>
+      </body>
     </html>
   );
 }

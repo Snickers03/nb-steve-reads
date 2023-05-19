@@ -1,13 +1,11 @@
 "use client";
 import React, { useState } from "react";
 import Image from "next/image";
-
 import { useTheme } from "next-themes";
 
 const Header = () => {
   const [isDarkMode, setIsDarkMode] = useState(false);
-
-  const { setTheme, theme } = useTheme();
+  const { setTheme } = useTheme();
 
   return (
     <div>
